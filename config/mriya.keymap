@@ -98,8 +98,8 @@
 */
 
             bindings = <
-&kp ESC  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_0                        &kp HOME       &kp UP            &kp END            &kp F13   &kp F14       &kp EQUAL
-&trans   &caps_word    &trans        &trans        &kp PG_UP     &kp PG_DN                           &kp LEFT       &kp DOWN          &kp RIGHT          &kp F15   &kp F16       &kp BACKSLASH
+&kp ESC  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_0                        &kp HOME       &kp UP            &kp END            &kp F14   &kp F15       &kp EQUAL
+&trans   &caps_word    &trans        &trans        &kp PG_UP     &kp PG_DN                           &kp LEFT       &kp DOWN          &kp RIGHT          &kp F16   &kp F17       &kp BACKSLASH
 &trans   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                        &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE  &kp KP_SLASH  &kp DEL
                                                    &mo 3         &mo 2         &kp ENTER  &kp ENTER  &mo 2          &mo 3
             >;
