@@ -404,7 +404,7 @@
 &kp ESC  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_0                        &kp HOME       &kp UP            &kp END            &kp F13   &kp F14       &kp EQUAL
 &trans   &caps_word    &trans        &trans        &kp PG_UP     &kp PG_DN                           &kp LEFT       &kp DOWN          &kp RIGHT          &kp F15   &kp F16       &kp BACKSLASH
 &trans   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                        &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE  &kp KP_SLASH  &kp DEL
-                                                   &trans        &mo 2         &kp ENTER  &kp ENTER  &mo 2          &trans
+                                                   &mo 3         &mo 2         &kp ENTER  &kp ENTER  &mo 2          &mo 3
             >;
         };
 
@@ -434,6 +434,17 @@
 &bt BT_CLR_ALL  &bt BT_CLR    &trans        &trans        &trans        &bt BT_PRV                    &trans  &trans  &trans  &trans  &trans  &studio_unlock
                                                           &trans        &trans        &trans  &trans  &trans  &trans
             >;
+        };
+
+        flayer {
+            bindings = <
+&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F10                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F12  &trans  &trans  &trans  &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp F5  &kp F6  &kp F7  &kp F8  &kp F9                   &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans  &trans   &trans  &trans  &trans  &trans
+            >;
+
+            label = "F";
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
