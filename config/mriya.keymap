@@ -437,59 +437,6 @@
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        adjust_layer {
-            // ┌────────────────────────────────────────────┐
-
-            label = "ADJUST";
-
-            // └────────────────────────────────────────────┘
-            /*
-┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│ BLDR  │ RESET │       │STUDIO │       │BT NEXT│                   │BT NEXT│   ₽   │   €   │       │       │  BLDR │
-├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
-│ BTCLR │  BT0  │  BT1  │  BT2  │  BT3  │  BT4  │                   │  BT4  │  BT3  │  BT2  │  BT1  │  BT0  │ BTCLR │
-├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│ CAPS  │ NUMLK │  INS  │ SLCK  │ PAUSE │BT PREV│                   │BT PREV│ PAUSE │ SLCK  │  INS  │ NUMLK │ CAPS  │
-└───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
-                                │   ▲   │ POWER │   ▼   │   │   ▼   │ POWER │   ▲   │
-                                └───────┴───────┴───────┘   └───────┴───────┴───────┘
-*/
-
-            bindings = <
-&bootloader  &sys_reset    &none         &studio_unlock  &bt BT_PRV       &bt BT_NXT                    &bt BT_NXT    &kp RA(N8)       &euro         &cprght       &degree       &bootloader
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4                  &bt BT_SEL 4  &bt BT_SEL 3     &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&kp CAPS     &kp KP_NUM    &kp INS       &kp SLCK        &kp PAUSE_BREAK  &bt BT_PRV                    &bt BT_PRV    &kp PAUSE_BREAK  &kp SLCK      &kp INS       &kp KP_NUM    &kp CAPS
-                                                         &trans           &soft_off     &trans  &trans  &soft_off     &trans
-            >;
-        };
-
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄		
-
-        navi_layer {
-            // ┌────────────────────────────────────────────┐
-
-            label = "NAVI";
-
-            // └────────────────────────────────────────────┘
-            /*
-┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│       │  BKSP │ PGUP  │  TAB  │ HOME  │  ESC  │                   │  ESC  │ HOME  │  TAB  │ PGUP  │  BKSP │       │
-├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
-│       │   ]   │   ←   │   ↑   │   →   │ ENTER │                   │ ENTER │   ←   │   ↑   │   →   │   [   │       │
-├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│       │   `   │ PGDN  │   ↓   │  END  │  DEL  │                   │  DEL  │  END  │   ↓   │ PGDN  │   '   │       │
-└───────┴───────┴───────┴───────┼───────┼───────┼───────┐   ┌───────┼───────┼───────┼───────┴───────┴───────┴───────┘
-                                │       │       │       │   │       │       │       │
-                                └───────┴───────┴───────┘   └───────┴───────┴───────┘  
-*/
-
-            bindings = <
-&none  &kp BSPC       &kp PG_UP      &kp TAB       &kp HOME         &kp ESC                &kp ESC  &kp HOME  &kp TAB   &kp PG_UP  &kp BSPC  &none
-&none  &mt LGUI LBKT  &mt LALT LEFT  &mt LCTRL UP  &mt LSHFT RIGHT  &kp RET                &kp RET  &kp LEFT  &kp UP    &kp RIGHT  &kp RBKT  &none
-&none  &kp GRAVE      &kp PG_DN      &kp DOWN      &kp END          &kp DEL                &kp DEL  &kp END   &kp DOWN  &kp PG_DN  &kp SQT   &none
-                                                   &none            &trans   &none  &none  &trans   &none
-            >;
-        };
     };
 };
