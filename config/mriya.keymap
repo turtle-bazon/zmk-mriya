@@ -401,10 +401,10 @@
 */
 
             bindings = <
-&kp CAPS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_0                           &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp DOLLAR  &kp PERCENT  &kp RGUI
-&kp LCTRL  &kp F11       &kp F3        &kp F2        &kp F1        &kp K_CMENU                            &colon          &question     &kp STAR      &kp LPAR    &kp RPAR     &kp AMPS
-&kp LALT   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                           &kp BSLH        &lguillement  &rguillement  &lbracket   &rbracket    &kp CARET
-                                                     &lt 3 TAB     &mt LSHFT SPACE  &kp ENTER  &kp ENTER  &mt RSHFT BSPC  &lt 3 DEL
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_0                        &kp HOME  &kp UP    &kp END    &trans  &trans  &trans
+&trans  &caps_word    &trans        &trans        &kp PG_UP     &kp PG_DN                           &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans
+&trans  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                        &trans    &trans    &trans     &trans  &trans  &trans
+                                                  &trans        &mo 2         &kp ENTER  &kp ENTER  &mo 2     &trans
             >;
         };
 
