@@ -92,7 +92,7 @@
 
             bindings = <
 &kp ESC  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_0                        &kp HOME    &kp UP            &kp END            &kp MINUS      &kp EQUAL         &kp DELETE
-&trans   &caps_word    &trans        &kp GRAVE     &kp PG_UP     &kp PG_DN                           &kp LEFT    &kp DOWN          &kp RIGHT          &trans         &kp SINGLE_QUOTE  &trans
+&trans   &caps_word    &trans        &kp GRAVE     &kp PG_UP     &kp PG_DN                           &kp LEFT    &kp DOWN          &kp RIGHT          &kp KP_DOT     &kp SINGLE_QUOTE  &trans
 &trans   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                        &kp INSERT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp KP_SLASH      &trans
                                                    &trans        &mo 3         &kp ENTER  &kp ENTER  &mo 3       &trans
             >;
