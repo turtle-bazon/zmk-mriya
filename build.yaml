@@ -14,11 +14,33 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: mriya_left
+    shield: mriya_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano_v2
-    shield: mriya_right
+    shield: mriya_left_main
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano_v2
+    shield: mriya_left_main_display nice_view_adapter nice_view_gem
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano_v2
+    shield: mriya_right_main
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano_v2
+    shield: mriya_right_main_display nice_view_adapter nice_view_gem
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano_v2
+    shield: mriya_left_secondary
+  - board: nice_nano_v2
+    shield: mriya_left_secondary_display nice_view_adapter nice_view_gem
+  - board: nice_nano_v2
+    shield: mriya_right_secondary
+  - board: nice_nano_v2
+    shield: mriya_right_secondary_display nice_view_adapter nice_view_gem
   - board: nice_nano_v2
     shield: settings_reset
  
